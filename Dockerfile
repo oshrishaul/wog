@@ -1,3 +1,3 @@
 FROM python:3
-WORKDIR C:\\Users\\oshris\\PycharmProjects\\general_env\\WoG
+WORKDIR /
 CMD [ "python3", "./MainScores.py" ]
