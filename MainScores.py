@@ -1,4 +1,4 @@
-import WoG.Utils
+
 from flask import Flask
 
 app = Flask(__name__)
@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def score_server():
     try:
-        score = open(WoG.Utils.SCORES_FILE_NAME, "r")
+        score = open("scores.txt", "r")
     except BaseException as e:
         return """<html>
         <head>
@@ -14,7 +14,7 @@ def score_server():
         </head>
         <body>
         <body>
-            <h1><div id="score" style="color:red">""" + WoG.Utils.ERROR_MESSAGE() + str(e) + """</div></h1>
+            <h1><div id="score" style="color:red">""" + Utils.ERROR_MESSAGE() + str(e) + """</div></h1>
         </body>
         </html>
         """
