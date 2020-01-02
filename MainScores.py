@@ -30,4 +30,4 @@ def score_server():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=Fals, threaded=True, port=8777)
+    app.run(host='0.0.0.0', debug=False, threaded=True, port=8777)
