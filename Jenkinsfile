@@ -13,7 +13,7 @@ agent any
         }
         stage('run') {
             steps {
-                bat 'docker-compose up &'
+               sh 'sudo docker-compose up &'
             }
         }
         stage('test') {
